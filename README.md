@@ -10,8 +10,8 @@ web3validator provides much more than security! We are actively participating in
 
 
 ### Mainnet
-* [Install node](https://github.com/MaxMavaIll/Guide_Web_Shentu#install-binary)
-* [State sync](https://github.com/MaxMavaIll/Guide_Web_Shentu#state-sync)
+* [Install node](https://github.com/web3validator/Shentu_contributions#shentu_contributions)
+* [State sync](https://github.com/web3validator/Shentu_contributions#state-sync)
 
 
 ## RPC
