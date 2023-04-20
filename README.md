@@ -62,7 +62,7 @@ wget http://65.108.66.34/addrbook_shentu.json -O $HOME/.shentud/config/addrbook.
 wget http://65.108.66.34/shentud.service -P /etc/systemd/system/
 
 ```
-If you want to quickly catch up with the network, use this [State Sync](https://github.com/MaxMavaIll/Guide_Web_Shentu#state-sync)
+If you want to quickly catch up with the network, use this [State Sync](https://github.com/web3validator/Shentu_contributions#state-sync)
 
 ```
 sudo systemctl start shentud && sudo journalctl -u shentud -f --no-hostname -o cat
@@ -107,7 +107,11 @@ sudo systemctl start shentud && sudo journalctl -u shentud -f --no-hostname -o c
   ### Reset the database 
   ```
   sudo systemctl stop shentud && 
-  shentud tendermint unsafe-reset-all --home $HOME/.shentud --keep-addr-book
+  cp $HOME/.shentud/data/priv_validator_state.json $HOME/.shentud/priv_validator_state.json.backup &&
+  
+  shentud tendermint unsafe-reset-all --home $HOME/.shentud --keep-addr-book &&
+  
+  cp $HOME/.shentud/priv_validator_state.json.backup $HOME/.shentud/data/priv_validator_state.json
   
   ```
   ## Restart node and check the logs
