@@ -42,7 +42,7 @@ http://142.132.158.158:9750
 You can check new version here ([New_version_bin](https://github.com/shentufoundation/shentu/releases))
 ```
 cd $HOME
-git clone https://github.com/ShentuChain/shentu.git -b v2.7.0
+git clone https://github.com/ShentuChain/shentu.git -b v2.6.0
 cd $HOME/shentu
 make install
 
