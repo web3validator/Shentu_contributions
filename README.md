@@ -10,7 +10,7 @@ web3validator provides much more than security! We are actively participating in
 
 
 ### Mainnet
-* [Install node](https://github.com/web3validator/Shentu_contributions#shentu_contributions)
+* [Install node](https://github.com/web3validator/Shentu_contributions#install-binary)
 * [State sync](https://github.com/web3validator/Shentu_contributions#state-sync)
 
 
